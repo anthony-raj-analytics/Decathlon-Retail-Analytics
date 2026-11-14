@@ -1,37 +1,33 @@
 <div align="center">
 
-<img src="Screenshot/Decathlon%20Retail%20Performance%20Dashboard%20Background.png" width="100%" alt="Decathlon Banner">
-
 # DECATHLON RETAIL ANALYTICS
 
 ### Retail Sales & Profitability Intelligence
 
-<p>
-<img src="https://img.shields.io/badge/POWER%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
-<img src="https://img.shields.io/badge/EXCEL-Dataset-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white">
-<img src="https://img.shields.io/badge/DAX-KPI%20Analytics-4479A1?style=for-the-badge">
-<img src="https://img.shields.io/badge/POWER%20QUERY-ETL-5B2D90?style=for-the-badge">
+<p align="center">
+  <img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" alt="Power BI"/>
+  <img src="https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white" alt="Excel"/>
+  <img src="https://img.shields.io/badge/DAX-0078D4?style=for-the-badge" alt="DAX"/>
+  <img src="https://img.shields.io/badge/Power%20Query-5B2D90?style=for-the-badge" alt="Power Query"/>
 </p>
 
-**Turning Retail Data into Business Insights**
+**Transforming Retail Data into Actionable Business Insights**
 
 <br>
 
-<a href="#dashboard">Dashboard</a> &nbsp; | &nbsp;
-<a href="#data-model">Data Model</a> &nbsp; | &nbsp;
-<a href="#dax">DAX Measures</a> &nbsp; | &nbsp;
-<a href="#insights">Business Insights</a> &nbsp; | &nbsp;
-<a href="#author">Author</a>
+<a href="#dashboard">Dashboard</a> &nbsp; • &nbsp;
+<a href="#datamodel">Data Model</a> &nbsp; • &nbsp;
+<a href="#dax">DAX Architecture</a> &nbsp; • &nbsp;
+<a href="#insights">Insights</a> &nbsp; • &nbsp;
+<a href="#technologies">Technologies</a>
 
 </div>
 
 ---
 
-<a id="overview"></a>
+## 📌 Project Overview
 
-## 📌 01. Project Overview
-
-This project presents an interactive Decathlon Retail Sales & Profitability Dashboard developed using Microsoft Power BI.
+This project presents an interactive **Decathlon Retail Sales & Profitability Dashboard** developed using Microsoft Power BI.
 
 The solution analyzes retail sales, profitability, product performance, sports categories, brands, and regional contributions.
 
@@ -45,21 +41,20 @@ Raw Excel datasets are transformed into meaningful business insights using Power
 - Identify top-performing sports and brands.
 - Evaluate product-level performance.
 - Analyze regional sales contributions.
-- Track key business performance indicators.
+- Track key business KPIs.
 
 ---
 
 <a id="dashboard"></a>
 
-## 📊 02. Power BI Dashboard
+## 📊 01. Power BI Dashboard
 
 <div align="center">
 
 ### RETAIL PERFORMANCE
-
 **Sales & Profitability Overview**
 
-<img src="Screenshot/Dashboard.png" width="100%" alt="Decathlon Retail Dashboard">
+<img src="./Screenshots/Dashboard.png" width="100%" alt="Decathlon Power BI Dashboard"/>
 
 </div>
 
@@ -74,12 +69,12 @@ Raw Excel datasets are transformed into meaningful business insights using Power
 | Net Orders YTD | 24.08K | 19.577K |
 | Net AOV YTD | ₹2.82K | ₹2.27K |
 
-### Dashboard Components
+### Dashboard Visualizations
 
-| Visualization | Business Purpose |
+| Visualization | Analysis |
 |---|---|
 | Monthly Net Sales | Current vs Previous Year |
-| Top 5 Sports | Category Performance |
+| Top 5 Sports | Sports Category Performance |
 | Product Type Performance | Sales & Gross Margin |
 | Regional Sales | Geographical Contribution |
 | Top 5 Brands | Brand Performance |
@@ -87,32 +82,28 @@ Raw Excel datasets are transformed into meaningful business insights using Power
 
 ### Interactive Filters
 
-- State
-- Sport
-- Product Tier
-- Store Name
-- Payment Method
+`State` · `Sport` · `Product Tier` · `Store Name` · `Payment Method`
 
 ---
 
-<a id="data-model"></a>
+<a id="datamodel"></a>
 
-## 🏗️ 03. Data Model Architecture
+## 🏗️ 02. Data Model Architecture
 
 <div align="center">
 
-### POWER BI DATA MODEL
+### POWER BI RELATIONAL DATA MODEL
 
-<img src="Screenshot/Data_Model.png" width="100%" alt="Decathlon Data Model Architecture">
+<img src="./Screenshots/Data_Model.png" width="100%" alt="Decathlon Data Model Architecture"/>
 
 </div>
 
 ### Model Components
 
-| Table | Description |
+| Table | Purpose |
 |---|---|
-| Products | Product attributes and pricing |
 | Sales | Central transaction fact table |
+| Products | Product attributes and pricing |
 | Store | Store and geographical information |
 | Date Table | Time intelligence |
 | KPI Measures | Centralized DAX calculations |
@@ -130,19 +121,19 @@ Raw Excel datasets are transformed into meaningful business insights using Power
 
 <a id="dax"></a>
 
-## 🧮 04. DAX Measures Architecture
+## 🧮 03. DAX Measures Architecture
 
 <div align="center">
 
 ### ORGANIZED DAX MEASURE STRUCTURE
 
-<img src="Screenshot/DAX_Measures.png" width="100%" alt="DAX Measures Architecture">
+<img src="./Screenshots/DAX_Measures.png" width="100%" alt="DAX Measures Architecture"/>
 
 </div>
 
-DAX calculations are organized into six logical folders inside the KPI Measures table.
+DAX calculations are organized into six logical folders inside the dedicated KPI Measures table.
 
-| Folder | Measures |
+| Folder | Measure Categories |
 |---|---|
 | 01 Sales | Net Sales, CY Sales, PY Sales, YTD, PYTD, YoY Growth |
 | 02 Profit | Net Gross Profit, YTD, PYTD, YoY Growth |
@@ -151,7 +142,7 @@ DAX calculations are organized into six logical folders inside the KPI Measures 
 | 05 Orders | Net Orders, YTD, PYTD, YoY Growth |
 | 06 AOV | Net AOV, YTD, PYTD, YoY Growth |
 
-### DAX Concepts
+### Key DAX Concepts
 
 - Year-to-Date (YTD)
 - Previous Year-to-Date (PYTD)
@@ -165,7 +156,7 @@ DAX calculations are organized into six logical folders inside the KPI Measures 
 
 <a id="insights"></a>
 
-## 💡 05. Business Insights
+## 💡 04. Business Insights
 
 | Business Area | Key Finding |
 |---|---|
@@ -182,35 +173,60 @@ DAX calculations are organized into six logical folders inside the KPI Measures 
 - Better sales and profitability monitoring.
 - Product and brand performance evaluation.
 - Regional performance comparison.
-- Data-driven business decision support.
+- Data-driven decision support.
 
 ---
 
-## ⚙️ 06. Project Workflow
+## ⚙️ 05. Project Workflow
+
+<div align="center">
+
+| Stage | Process |
+|:---:|---|
+| 01 | 📁 Excel Datasets |
+| ↓ | |
+| 02 | 🔄 Power Query – Data Transformation |
+| ↓ | |
+| 03 | 🗂️ Data Modeling – Relationships & Date Table |
+| ↓ | |
+| 04 | 🧮 DAX – KPI & Time Intelligence |
+| ↓ | |
+| 05 | 📊 Power BI – Dashboard Development |
+| ↓ | |
+| 06 | 💡 Business Insights & Reporting |
+
+</div>
+
+---
+
+<a id="technologies"></a>
+
+## 🛠️ 06. Technologies & Tools
 
 <div align="center">
 
 <table>
 <tr>
-<td align="center">📁<br><b>Excel Datasets</b></td>
-<td align="center">➡️</td>
-<td align="center">🔄<br><b>Power Query</b></td>
-<td align="center">➡️</td>
-<td align="center">🗂️<br><b>Data Modeling</b></td>
-</tr>
-<tr>
-<td align="center">⬇️</td>
-<td></td>
-<td align="center">⬇️</td>
-<td></td>
-<td align="center">⬇️</td>
-</tr>
-<tr>
-<td align="center">📊<br><b>Power BI Dashboard</b></td>
-<td align="center">⬅️</td>
-<td align="center">🧮<br><b>DAX Measures</b></td>
-<td align="center">⬅️</td>
-<td align="center">📈<br><b>KPI Calculations</b></td>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/powerbi/F2C811" width="48" height="48" alt="Power BI"/>
+<br><b>Power BI</b>
+<br><sub>Dashboard Development</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/microsoftexcel/217346" width="48" height="48" alt="Microsoft Excel"/>
+<br><b>Excel</b>
+<br><sub>Dataset Management</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/microsoft/5E5E5E" width="48" height="48" alt="Microsoft"/>
+<br><b>Power Query</b>
+<br><sub>Data Transformation</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://cdn.simpleicons.org/dax/0078D4" width="48" height="48" alt="DAX"/>
+<br><b>DAX</b>
+<br><sub>KPI Calculations</sub>
+</td>
 </tr>
 </table>
 
@@ -218,23 +234,7 @@ DAX calculations are organized into six logical folders inside the KPI Measures 
 
 ---
 
-## 🛠️ 07. Technology Stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=excel&theme=light" height="55">
-
-<br><br>
-
-<img src="https://img.shields.io/badge/Microsoft%20Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
-<img src="https://img.shields.io/badge/Power%20Query-5B2D90?style=for-the-badge">
-<img src="https://img.shields.io/badge/DAX-0078D4?style=for-the-badge">
-
-</div>
-
----
-
-## 📂 08. Repository Structure
+## 📂 07. Repository Structure
 
 ```text
 Decathlon-Retail-Analytics/
@@ -247,30 +247,33 @@ Decathlon-Retail-Analytics/
 ├── PowerBI/
 │   └── Decathlon_Dashboard.pbix
 │
-├── Screenshot/
+├── Screenshots/
 │   ├── Dashboard.png
 │   ├── Data_Model.png
-│   └── DAX_Measures.png
+│   ├── DAX_Measures.png
+│   └── README.md
 │
 └── README.md
 ```
 
-## 🚀 09. Project Outcome
+## 🚀 08. Project Outcome
 
-Developed an interactive Power BI retail analytics solution demonstrating practical skills in:
+Developed an interactive retail business intelligence solution that transforms raw sales data into meaningful business insights.
 
-- Data preparation and transformation.
-- Relational data modeling.
-- DAX calculations and time intelligence.
-- KPI development.
-- Interactive dashboard design.
-- Retail sales and profitability analysis.
+**Skills Demonstrated:**
+
+- Data Preparation & Transformation
+- Relational Data Modeling
+- DAX Calculations & Time Intelligence
+- KPI Development
+- Interactive Dashboard Design
+- Retail Sales & Profitability Analysis
 
 ---
 
-<a id="author"></a>
-
 <div align="center">
+
+<a id="author"></a>
 
 ## 👨‍💻 ABOUT THE DEVELOPER
 
@@ -278,19 +281,24 @@ Developed an interactive Power BI retail analytics solution demonstrating practi
 
 **Aspiring Data Analyst**
 
-Power BI | SQL | Excel | Python
+<p>
+<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=flat-square&logo=powerbi&logoColor=black"/>
+<img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
+<img src="https://img.shields.io/badge/Excel-217346?style=flat-square&logo=microsoftexcel&logoColor=white"/>
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+</p>
 
 <a href="https://www.linkedin.com/in/anthony-raj/">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
 </a>
 
 <a href="https://github.com/anthony-raj-analytics">
-<img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github">
+<img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
 </a>
 
 <br><br>
 
-**Thanks for visiting my project!**
+**THANK YOU FOR VISITING MY PROJECT**
 
 *Turning Data into Insights.*
 
