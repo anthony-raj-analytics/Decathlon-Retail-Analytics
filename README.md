@@ -1,82 +1,69 @@
 <div align="center">
 
+<img src="Screenshot/Decathlon%20Retail%20Performance%20Dashboard%20Background.png" width="100%" alt="Decathlon Banner">
+
 # DECATHLON RETAIL ANALYTICS
 
-### Retail Sales & Profitability Dashboard
+### Retail Sales & Profitability Intelligence
 
 <p>
 <img src="https://img.shields.io/badge/POWER%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
 <img src="https://img.shields.io/badge/EXCEL-Dataset-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white">
-<img src="https://img.shields.io/badge/DAX-KPI%20Measures-4479A1?style=for-the-badge">
+<img src="https://img.shields.io/badge/DAX-KPI%20Analytics-4479A1?style=for-the-badge">
 <img src="https://img.shields.io/badge/POWER%20QUERY-ETL-5B2D90?style=for-the-badge">
 </p>
 
-**Transforming Retail Data into Actionable Business Insights**
+**Turning Retail Data into Business Insights**
+
+<br>
+
+<a href="#dashboard">Dashboard</a> &nbsp; | &nbsp;
+<a href="#data-model">Data Model</a> &nbsp; | &nbsp;
+<a href="#dax">DAX Measures</a> &nbsp; | &nbsp;
+<a href="#insights">Business Insights</a> &nbsp; | &nbsp;
+<a href="#author">Author</a>
 
 </div>
 
 ---
 
-## 📌 Project Overview
+<a id="overview"></a>
+
+## 📌 01. Project Overview
 
 This project presents an interactive Decathlon Retail Sales & Profitability Dashboard developed using Microsoft Power BI.
 
-The solution analyzes retail business performance across sales, profitability, product categories, sports, brands, and geographical regions.
+The solution analyzes retail sales, profitability, product performance, sports categories, brands, and regional contributions.
 
-It transforms raw Excel datasets into meaningful business insights using Power Query, relational data modeling, DAX measures, and interactive visualizations.
+Raw Excel datasets are transformed into meaningful business insights using Power Query, relational data modeling, DAX calculations, and interactive visualizations.
 
 ## 🎯 Business Objectives
 
-- Analyze overall retail sales and profitability.
-- Monitor current-year vs previous-year performance.
-- Identify top-performing sports categories and brands.
-- Evaluate product-level sales and gross margins.
+- Analyze retail sales and profitability.
+- Compare current-year and previous-year performance.
+- Monitor monthly sales trends.
+- Identify top-performing sports and brands.
+- Evaluate product-level performance.
 - Analyze regional sales contributions.
 - Track key business performance indicators.
 
-## 🛠️ Technology Stack
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
-<img src="https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoftexcel&logoColor=white">
-<img src="https://img.shields.io/badge/DAX-4479A1?style=for-the-badge">
-<img src="https://img.shields.io/badge/Power%20Query-5B2D90?style=for-the-badge">
-
-</div>
-
-| Technology | Application |
-|---|---|
-| Microsoft Excel | Dataset Management |
-| Power Query | Data Transformation |
-| Power BI | Dashboard Development |
-| DAX | KPI Calculations |
-| Data Modeling | Relationship Management |
-| Data Visualization | Business Reporting |
-
-## 📂 Dataset Description
-
-Three Excel datasets are used in this project.
-
-| Dataset | Description |
-|---|---|
-| Products | Product, brand, sport, category and pricing information |
-| Sales | Sales transactions, discounts, profit, quantity and returns |
-| Store | Store details, geographical location and regional information |
-
 ---
 
-## 📊 Dashboard Preview
+<a id="dashboard"></a>
+
+## 📊 02. Power BI Dashboard
 
 <div align="center">
 
-### RETAIL PERFORMANCE – SALES & PROFITABILITY OVERVIEW
+### RETAIL PERFORMANCE
 
-<img src="Screenshots/Decathlon_Dashboard.png" width="100%" alt="Decathlon Retail Performance Dashboard">
+**Sales & Profitability Overview**
+
+<img src="Screenshot/Dashboard.png" width="100%" alt="Decathlon Retail Dashboard">
 
 </div>
 
-## 📈 Key Performance Indicators
+### Key Performance Indicators
 
 | KPI | Current Year | Previous Year |
 |---|---:|---:|
@@ -87,31 +74,19 @@ Three Excel datasets are used in this project.
 | Net Orders YTD | 24.08K | 19.577K |
 | Net AOV YTD | ₹2.82K | ₹2.27K |
 
-*YTD comparison through 15 September against the same period in 2025.*
+### Dashboard Components
 
-## 📊 Dashboard Features
+| Visualization | Business Purpose |
+|---|---|
+| Monthly Net Sales | Current vs Previous Year |
+| Top 5 Sports | Category Performance |
+| Product Type Performance | Sales & Gross Margin |
+| Regional Sales | Geographical Contribution |
+| Top 5 Brands | Brand Performance |
+| Interactive Filters | Dynamic Analysis |
 
-**01. Monthly Net Sales**
-- Current Year vs Previous Year sales trends.
-- Monthly performance comparison.
+### Interactive Filters
 
-**02. Top 5 Net Sales by Sport**
-- Hiking, Badminton, Fitness, Cricket and Cycling.
-- Sports category performance.
-
-**03. Product Type Performance**
-- Net sales analysis.
-- Gross margin comparison.
-
-**04. Regional Sales Performance**
-- Regional sales contribution.
-- Geographical performance analysis.
-
-**05. Top 5 Net Sales by Brand**
-- Brand-wise sales comparison.
-- Top-performing brands.
-
-**06. Interactive Filters**
 - State
 - Sport
 - Product Tier
@@ -120,53 +95,63 @@ Three Excel datasets are used in this project.
 
 ---
 
-## 🏗️ Data Model Architecture
+<a id="data-model"></a>
 
-The Power BI data model connects the Sales fact table with Products, Store, and Date dimensions.
-
-A dedicated KPI Measures table organizes DAX calculations into six logical groups.
+## 🏗️ 03. Data Model Architecture
 
 <div align="center">
 
 ### POWER BI DATA MODEL
 
-<img src="Screenshots/Data_Model.png" width="100%" alt="Decathlon Power BI Data Model Architecture">
+<img src="Screenshot/Data_Model.png" width="100%" alt="Decathlon Data Model Architecture">
 
 </div>
 
 ### Model Components
 
-| Component | Purpose |
+| Table | Description |
 |---|---|
-| Sales | Central transaction table |
-| Products | Product dimension |
-| Store | Store dimension |
-| Date Table | Time intelligence analysis |
+| Products | Product attributes and pricing |
+| Sales | Central transaction fact table |
+| Store | Store and geographical information |
+| Date Table | Time intelligence |
 | KPI Measures | Centralized DAX calculations |
 
-**Model Highlights:**
+### Data Modeling Highlights
+
 - One-to-many relationships.
 - Dedicated Date Table.
-- Organized KPI Measures.
+- Central Sales fact table.
+- Product and Store dimensions.
 - Single-direction filtering.
-- Time intelligence support.
+- Organized KPI Measures.
 
 ---
 
-## 🧮 DAX Measures & Organization
+<a id="dax"></a>
 
-DAX measures are organized into six folders under the dedicated KPI Measures table.
+## 🧮 04. DAX Measures Architecture
 
-| Folder | Measure Categories |
+<div align="center">
+
+### ORGANIZED DAX MEASURE STRUCTURE
+
+<img src="Screenshot/DAX_Measures.png" width="100%" alt="DAX Measures Architecture">
+
+</div>
+
+DAX calculations are organized into six logical folders inside the KPI Measures table.
+
+| Folder | Measures |
 |---|---|
 | 01 Sales | Net Sales, CY Sales, PY Sales, YTD, PYTD, YoY Growth |
-| 02 Profit | Gross Profit, YTD, PYTD, YoY Growth |
+| 02 Profit | Net Gross Profit, YTD, PYTD, YoY Growth |
 | 03 Margin | Gross Margin, YTD, PYTD, YoY Comparison |
 | 04 Units | Net Units Sold, YTD, PYTD, YoY Growth |
 | 05 Orders | Net Orders, YTD, PYTD, YoY Growth |
 | 06 AOV | Net AOV, YTD, PYTD, YoY Growth |
 
-### Key DAX Concepts
+### DAX Concepts
 
 - Year-to-Date (YTD)
 - Previous Year-to-Date (PYTD)
@@ -176,44 +161,80 @@ DAX measures are organized into six folders under the dedicated KPI Measures tab
 - Average Order Value
 - Dynamic KPI Display Measures
 
-## 💡 Key Business Insights
+---
 
-- Net Sales reached ₹55.26M, representing 24.3% YoY growth.
-- Gross Profit increased by 25.3%.
-- Gross Margin reached 39.3%.
-- Hiking recorded the highest sales among sports categories.
-- Quechua was the leading brand by net sales.
-- South region contributed 31.69% of total net sales.
+<a id="insights"></a>
 
-## ⚙️ Project Workflow
+## 💡 05. Business Insights
+
+| Business Area | Key Finding |
+|---|---|
+| Sales | ₹55.26M Net Sales |
+| Profit | ₹21.72M Gross Profit |
+| Margin | 39.3% Gross Margin |
+| Sports | Hiking recorded highest sales |
+| Brand | Quechua recorded highest sales |
+| Region | South contributed 31.69% |
+
+### Business Value
+
+- Improved retail performance visibility.
+- Better sales and profitability monitoring.
+- Product and brand performance evaluation.
+- Regional performance comparison.
+- Data-driven business decision support.
+
+---
+
+## ⚙️ 06. Project Workflow
 
 <div align="center">
 
-**Excel Datasets**
-
-⬇️
-
-**Power Query – Data Preparation**
-
-⬇️
-
-**Data Modeling – Relationships & Date Table**
-
-⬇️
-
-**DAX – KPI & Time Intelligence Measures**
-
-⬇️
-
-**Power BI – Interactive Dashboard**
-
-⬇️
-
-**Business Insights & Reporting**
+<table>
+<tr>
+<td align="center">📁<br><b>Excel Datasets</b></td>
+<td align="center">➡️</td>
+<td align="center">🔄<br><b>Power Query</b></td>
+<td align="center">➡️</td>
+<td align="center">🗂️<br><b>Data Modeling</b></td>
+</tr>
+<tr>
+<td align="center">⬇️</td>
+<td></td>
+<td align="center">⬇️</td>
+<td></td>
+<td align="center">⬇️</td>
+</tr>
+<tr>
+<td align="center">📊<br><b>Power BI Dashboard</b></td>
+<td align="center">⬅️</td>
+<td align="center">🧮<br><b>DAX Measures</b></td>
+<td align="center">⬅️</td>
+<td align="center">📈<br><b>KPI Calculations</b></td>
+</tr>
+</table>
 
 </div>
 
-## 📁 Repository Structure
+---
+
+## 🛠️ 07. Technology Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=excel&theme=light" height="55">
+
+<br><br>
+
+<img src="https://img.shields.io/badge/Microsoft%20Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
+<img src="https://img.shields.io/badge/Power%20Query-5B2D90?style=for-the-badge">
+<img src="https://img.shields.io/badge/DAX-0078D4?style=for-the-badge">
+
+</div>
+
+---
+
+## 📂 08. Repository Structure
 
 ```text
 Decathlon-Retail-Analytics/
@@ -226,28 +247,38 @@ Decathlon-Retail-Analytics/
 ├── PowerBI/
 │   └── Decathlon_Dashboard.pbix
 │
-├── Screenshots/
-│   ├── Decathlon_Dashboard.png
-│   └── Data_Model.png
+├── Screenshot/
+│   ├── Dashboard.png
+│   ├── Data_Model.png
+│   └── DAX_Measures.png
 │
 └── README.md
 ```
 
-## 🚀 Project Outcome
+## 🚀 09. Project Outcome
 
-Developed an interactive retail business intelligence solution that converts raw sales data into meaningful business insights.
+Developed an interactive Power BI retail analytics solution demonstrating practical skills in:
 
-This project demonstrates practical experience in Power BI dashboard development, data transformation, relational data modeling, DAX calculations, KPI reporting, and retail performance analysis.
+- Data preparation and transformation.
+- Relational data modeling.
+- DAX calculations and time intelligence.
+- KPI development.
+- Interactive dashboard design.
+- Retail sales and profitability analysis.
 
 ---
 
+<a id="author"></a>
+
 <div align="center">
 
-## 👨‍💻 DEVELOPED BY
+## 👨‍💻 ABOUT THE DEVELOPER
 
 # Anthony Raj
 
-**Aspiring Data Analyst | Power BI | SQL | Excel | Python**
+**Aspiring Data Analyst**
+
+Power BI | SQL | Excel | Python
 
 <a href="https://www.linkedin.com/in/anthony-raj/">
 <img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin">
@@ -256,5 +287,11 @@ This project demonstrates practical experience in Power BI dashboard development
 <a href="https://github.com/anthony-raj-analytics">
 <img src="https://img.shields.io/badge/GitHub-Portfolio-181717?style=for-the-badge&logo=github">
 </a>
+
+<br><br>
+
+**Thanks for visiting my project!**
+
+*Turning Data into Insights.*
 
 </div>
